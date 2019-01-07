@@ -1,0 +1,414 @@
+
+/************************************************
+*************************************************
+         DEFAULT STANDARD STYLING
+*************************************************
+*************************************************/
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+} 
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+/****************************************
+          MAIN CONTENT STYLING
+*****************************************/
+  body {
+    margin: 0;
+  }
+  .header {
+    padding: 10px;
+    margin: 30px 5px;
+  }
+  .project_logo {
+    padding: 100px 20px;
+    margin: 0;
+    text-align: center;
+    background: 
+                #9B9B9B url('../images/switz.png') no-repeat center/cover;
+  }
+  .menu_icons {
+    float: left;
+  }
+  .menu_nav {
+    float: right;
+  }
+  .social_media,
+  .footer {
+    display: none;
+  }
+  .main_content {
+    margin: 20px 5px;
+    padding: 10px;
+  }
+  nav ul {
+    display: none;    
+  }
+  .mobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    width: 100vw;
+    padding: 5px 30px;
+  }
+  .close {
+    margin: 0 auto;
+    text-align: right;
+  }
+  .menu {
+    padding: 30px 50px;
+    text-align: center;
+  }
+  .menu p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 15px;
+    margin: 50px 0;
+    color: #007711;
+    border-bottom: 1px solid orange;
+  }
+  .mobileMenu p:hover {
+    color: #E9E9E9;
+    background-color: orange;
+    border-radius: 5px;
+  }
+  .cities {
+    margin-bottom: 50px;
+  }
+  .cities h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 23px;
+    text-align: center;
+    color: #1E1E1E;
+    margin: 10px 0;
+    padding: 5px;
+  }
+  .cities h2 {
+    font-family: Merriweather;
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: left;
+    color: #000000;
+  }
+  .caption {
+    background-color: #fafafa;
+    padding: 10px;
+    font-weight: normal;
+    line-height: 30px;
+    font-size: 10px;
+    text-align: center;
+    color: #9B9B9B;
+    margin: 10px 0;
+  }
+  .caption h3 {
+    font-family: Merriweather;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    text-align: center;
+    color: #000000;
+  }
+  .cities img {
+    display: none;
+  }
+  .info {
+    display: flex;
+    flex-direction: row;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 12px;
+    text-align: center;
+    color: #9B9B9B;
+    margin: 20px 0;
+  }
+  .cities p {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
+    font-size: 10px;
+    text-align: left;
+    margin: 10px 0;
+    color: #4A4A4A;
+  }
+  footer {
+    border-top: 1px solid #d8d8d8;
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 10px;
+    font-size: 6px;
+    display: flex;
+    justify-content: space-between;
+    color: #4A4A4A;
+    padding: 20px 0;
+  }
+  .publish {
+    width: 50%;
+    text-align: left;
+  }
+  .post {
+    width: 50%;
+    text-align: right;
+  }
+  .btn {
+    text-align: center;
+  }
+  button {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    letter-spacing: 2px;
+    color: #4A4A4A;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    border-radius: 50px;
+    padding: 5px 20px;
+  } 
+  .pagination {
+    margin: 0 5px 30x;
+    padding: 10px 20px;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #1E1E1E;
+  }
+  .prev a,
+  .next a {
+    color: #1E1E1E;
+    text-decoration: none;
+  }
+  .prev {
+    float: left;
+  }
+  .next {
+    float: right;
+  }
+/****************************************
+          MEDIA QUERIES
+*****************************************/
+
+/* For Large Screen Sizes */
+
+@media (min-width: 1024px) {
+  .project_logo,
+  .menu_nav {
+    display: none;
+  }
+  .header {
+    display: flex;
+    padding: 10px;
+    margin: 50px 100px;
+    
+    justify-content: space-between;
+  }
+  .social_media {
+    display: block;
+    margin: 20px 0 0 40px;
+  }
+  .icons {
+    margin: 0 10px;
+  }
+  .menu_icons {
+    display: flex;
+  }
+  nav ul {
+    display: flex;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #363636;  
+  }
+  li {
+    margin: 20px;
+  }
+  .main_content {
+    margin: 150px 200px 50px;
+    padding: 10px 40px;
+  }
+  .cities h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 46px;
+    text-align: center;
+    color: #1E1E1E;
+    margin: 10px 25px;
+    padding: 5px;
+  }
+  .cities h2 {
+    font-family: Merriweather;
+    font-weight: 900;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: left;
+    color: #000000;
+    margin: 0 170px;
+  }
+  .switzerland h1 {
+    margin: 10px 5px;
+    padding: 7px;
+  }
+  .cities img {
+    display: block;
+    width: 860px;
+    height: 460px;
+    margin: 50px 0;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #9B9B9B;
+    padding: 0 10px;
+    margin: 40px 100px 80px;
+  }
+  .caption {
+    background-color: #fafafa;
+    padding: 50px;
+    font-weight: normal;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    color: #9B9B9B;
+    margin: 50px 0;
+  }
+  .caption h3 {
+    font-family: Merriweather;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 20px;
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+    color: #000000;
+  }
+  .cities p {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 25px;
+    font-size: 13px;
+    text-align: justify;
+    margin: 30px 170px;
+    color: #4A4A4A;
+  }
+  footer {
+    border-top: 1px solid #d8d8d8;
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 30px;
+    font-size: 13px;
+    text-align: justify;
+    color: #4A4A4A;
+    margin: 0 40px;
+    padding: 30px 5px;
+  }
+  .publish {
+    float: left;
+  }
+  .post {
+    float: right;
+  }
+  .btn {
+    margin: 50px 0 100px;
+    text-align: center;
+  }
+  button {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #4A4A4A;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    border-radius: 50px;
+    padding: 10px 80px;
+  } 
+  .pagination {
+    margin: 20px 0;
+    padding: 10px 0 50px;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 34px;
+    text-align: center;
+    color: #1E1E1E;
+  }
+  .footer {
+    display: block;
+    text-align: center;
+    padding: 100px;
+    background-color: #fafafa;
+  }
+  .footer_logo {
+    margin: 0 0 30px;
+  }
+  .end_note {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    color: #9B9B9B;
+  }
+
+}
+
+@media (min-width: 1440px) {
+  .cities img {
+    display: block;
+    width: 960px;
+    height: 560px;
+    margin: 50px 0;
+  }
+}
