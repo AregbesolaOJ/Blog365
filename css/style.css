@@ -53,6 +53,7 @@ html {
     float: left;
   }
   .menu_nav {
+    color: #1E1E1E;
     float: right;
   }
   .social_media,
@@ -77,6 +78,7 @@ html {
     padding: 5px 30px;
   }
   .close {
+    color: #4A4A4A;
     margin: 0 auto;
     text-align: right;
   }
@@ -94,7 +96,7 @@ html {
     color: #007711;
     border-bottom: 1px solid orange;
   }
-  .mobileMenu p:hover {
+  .menu p:hover {
     color: #E9E9E9;
     background-color: orange;
     border-radius: 5px;
@@ -156,6 +158,12 @@ html {
     color: #9B9B9B;
     margin: 20px 0;
   }
+  .destination,
+  .user,
+  .date {
+    width: 30%;
+    margin: 5px;
+  } 
   .cities p {
     font-family: Merriweather;
     font-style: normal;
@@ -310,6 +318,12 @@ html {
     padding: 0 10px;
     margin: 40px 100px 80px;
   }
+  .destination,
+  .user,
+  .date {
+    width: 30%;
+    margin: 10px;
+  } 
   .caption {
     background-color: #fafafa;
     padding: 50px;
